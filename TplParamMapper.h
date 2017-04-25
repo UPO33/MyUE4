@@ -1,0 +1,1027 @@
+#pragma once
+
+
+
+#define TPLBOOLMAPPER8(Start, End, C0,C1,C2,C3,C4,C5,C6,C7)\
+if(C0){\
+if(C1){\
+if(C2){\
+if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,1,1,1,1,1,1>End\
+}else{\
+ Start<1,1,1,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,1,1,1,0,1>End\
+}else{\
+ Start<1,1,1,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,1,1,1,0,1,1>End\
+}else{\
+ Start<1,1,1,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,1,1,0,0,1>End\
+}else{\
+ Start<1,1,1,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,1,1,0,1,1,1>End\
+}else{\
+ Start<1,1,1,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,1,0,1,0,1>End\
+}else{\
+ Start<1,1,1,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,1,1,0,0,1,1>End\
+}else{\
+ Start<1,1,1,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,1,0,0,0,1>End\
+}else{\
+ Start<1,1,1,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,1,0,1,1,1,1>End\
+}else{\
+ Start<1,1,1,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,0,1,1,0,1>End\
+}else{\
+ Start<1,1,1,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,1,0,1,0,1,1>End\
+}else{\
+ Start<1,1,1,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,0,1,0,0,1>End\
+}else{\
+ Start<1,1,1,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,1,0,0,1,1,1>End\
+}else{\
+ Start<1,1,1,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,0,0,1,0,1>End\
+}else{\
+ Start<1,1,1,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,1,0,0,0,1,1>End\
+}else{\
+ Start<1,1,1,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,1,0,0,0,0,1>End\
+}else{\
+ Start<1,1,1,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,0,1,1,1,1,1>End\
+}else{\
+ Start<1,1,0,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,1,1,1,0,1>End\
+}else{\
+ Start<1,1,0,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,0,1,1,0,1,1>End\
+}else{\
+ Start<1,1,0,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,1,1,0,0,1>End\
+}else{\
+ Start<1,1,0,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,0,1,0,1,1,1>End\
+}else{\
+ Start<1,1,0,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,1,0,1,0,1>End\
+}else{\
+ Start<1,1,0,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,0,1,0,0,1,1>End\
+}else{\
+ Start<1,1,0,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,1,0,0,0,1>End\
+}else{\
+ Start<1,1,0,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,0,0,1,1,1,1>End\
+}else{\
+ Start<1,1,0,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,0,1,1,0,1>End\
+}else{\
+ Start<1,1,0,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,0,0,1,0,1,1>End\
+}else{\
+ Start<1,1,0,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,0,1,0,0,1>End\
+}else{\
+ Start<1,1,0,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,1,0,0,0,1,1,1>End\
+}else{\
+ Start<1,1,0,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,0,0,1,0,1>End\
+}else{\
+ Start<1,1,0,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,1,0,0,0,0,1,1>End\
+}else{\
+ Start<1,1,0,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,1,0,0,0,0,0,1>End\
+}else{\
+ Start<1,1,0,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C2){\
+if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,1,1,1,1,1,1>End\
+}else{\
+ Start<1,0,1,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,1,1,1,0,1>End\
+}else{\
+ Start<1,0,1,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,1,1,1,0,1,1>End\
+}else{\
+ Start<1,0,1,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,1,1,0,0,1>End\
+}else{\
+ Start<1,0,1,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,1,1,0,1,1,1>End\
+}else{\
+ Start<1,0,1,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,1,0,1,0,1>End\
+}else{\
+ Start<1,0,1,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,1,1,0,0,1,1>End\
+}else{\
+ Start<1,0,1,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,1,0,0,0,1>End\
+}else{\
+ Start<1,0,1,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,1,0,1,1,1,1>End\
+}else{\
+ Start<1,0,1,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,0,1,1,0,1>End\
+}else{\
+ Start<1,0,1,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,1,0,1,0,1,1>End\
+}else{\
+ Start<1,0,1,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,0,1,0,0,1>End\
+}else{\
+ Start<1,0,1,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,1,0,0,1,1,1>End\
+}else{\
+ Start<1,0,1,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,0,0,1,0,1>End\
+}else{\
+ Start<1,0,1,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,1,0,0,0,1,1>End\
+}else{\
+ Start<1,0,1,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,1,0,0,0,0,1>End\
+}else{\
+ Start<1,0,1,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,0,1,1,1,1,1>End\
+}else{\
+ Start<1,0,0,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,1,1,1,0,1>End\
+}else{\
+ Start<1,0,0,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,0,1,1,0,1,1>End\
+}else{\
+ Start<1,0,0,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,1,1,0,0,1>End\
+}else{\
+ Start<1,0,0,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,0,1,0,1,1,1>End\
+}else{\
+ Start<1,0,0,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,1,0,1,0,1>End\
+}else{\
+ Start<1,0,0,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,0,1,0,0,1,1>End\
+}else{\
+ Start<1,0,0,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,1,0,0,0,1>End\
+}else{\
+ Start<1,0,0,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,0,0,1,1,1,1>End\
+}else{\
+ Start<1,0,0,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,0,1,1,0,1>End\
+}else{\
+ Start<1,0,0,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,0,0,1,0,1,1>End\
+}else{\
+ Start<1,0,0,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,0,1,0,0,1>End\
+}else{\
+ Start<1,0,0,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<1,0,0,0,0,1,1,1>End\
+}else{\
+ Start<1,0,0,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,0,0,1,0,1>End\
+}else{\
+ Start<1,0,0,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<1,0,0,0,0,0,1,1>End\
+}else{\
+ Start<1,0,0,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<1,0,0,0,0,0,0,1>End\
+}else{\
+ Start<1,0,0,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C1){\
+if(C2){\
+if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,1,1,1,1,1,1>End\
+}else{\
+ Start<0,1,1,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,1,1,1,0,1>End\
+}else{\
+ Start<0,1,1,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,1,1,1,0,1,1>End\
+}else{\
+ Start<0,1,1,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,1,1,0,0,1>End\
+}else{\
+ Start<0,1,1,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,1,1,0,1,1,1>End\
+}else{\
+ Start<0,1,1,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,1,0,1,0,1>End\
+}else{\
+ Start<0,1,1,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,1,1,0,0,1,1>End\
+}else{\
+ Start<0,1,1,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,1,0,0,0,1>End\
+}else{\
+ Start<0,1,1,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,1,0,1,1,1,1>End\
+}else{\
+ Start<0,1,1,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,0,1,1,0,1>End\
+}else{\
+ Start<0,1,1,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,1,0,1,0,1,1>End\
+}else{\
+ Start<0,1,1,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,0,1,0,0,1>End\
+}else{\
+ Start<0,1,1,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,1,0,0,1,1,1>End\
+}else{\
+ Start<0,1,1,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,0,0,1,0,1>End\
+}else{\
+ Start<0,1,1,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,1,0,0,0,1,1>End\
+}else{\
+ Start<0,1,1,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,1,0,0,0,0,1>End\
+}else{\
+ Start<0,1,1,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,0,1,1,1,1,1>End\
+}else{\
+ Start<0,1,0,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,1,1,1,0,1>End\
+}else{\
+ Start<0,1,0,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,0,1,1,0,1,1>End\
+}else{\
+ Start<0,1,0,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,1,1,0,0,1>End\
+}else{\
+ Start<0,1,0,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,0,1,0,1,1,1>End\
+}else{\
+ Start<0,1,0,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,1,0,1,0,1>End\
+}else{\
+ Start<0,1,0,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,0,1,0,0,1,1>End\
+}else{\
+ Start<0,1,0,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,1,0,0,0,1>End\
+}else{\
+ Start<0,1,0,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,0,0,1,1,1,1>End\
+}else{\
+ Start<0,1,0,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,0,1,1,0,1>End\
+}else{\
+ Start<0,1,0,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,0,0,1,0,1,1>End\
+}else{\
+ Start<0,1,0,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,0,1,0,0,1>End\
+}else{\
+ Start<0,1,0,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,1,0,0,0,1,1,1>End\
+}else{\
+ Start<0,1,0,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,0,0,1,0,1>End\
+}else{\
+ Start<0,1,0,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,1,0,0,0,0,1,1>End\
+}else{\
+ Start<0,1,0,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,1,0,0,0,0,0,1>End\
+}else{\
+ Start<0,1,0,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C2){\
+if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,1,1,1,1,1,1>End\
+}else{\
+ Start<0,0,1,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,1,1,1,0,1>End\
+}else{\
+ Start<0,0,1,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,1,1,1,0,1,1>End\
+}else{\
+ Start<0,0,1,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,1,1,0,0,1>End\
+}else{\
+ Start<0,0,1,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,1,1,0,1,1,1>End\
+}else{\
+ Start<0,0,1,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,1,0,1,0,1>End\
+}else{\
+ Start<0,0,1,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,1,1,0,0,1,1>End\
+}else{\
+ Start<0,0,1,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,1,0,0,0,1>End\
+}else{\
+ Start<0,0,1,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,1,0,1,1,1,1>End\
+}else{\
+ Start<0,0,1,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,0,1,1,0,1>End\
+}else{\
+ Start<0,0,1,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,1,0,1,0,1,1>End\
+}else{\
+ Start<0,0,1,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,0,1,0,0,1>End\
+}else{\
+ Start<0,0,1,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,1,0,0,1,1,1>End\
+}else{\
+ Start<0,0,1,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,0,0,1,0,1>End\
+}else{\
+ Start<0,0,1,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,1,0,0,0,1,1>End\
+}else{\
+ Start<0,0,1,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,1,0,0,0,0,1>End\
+}else{\
+ Start<0,0,1,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}else{\
+ if(C3){\
+if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,0,1,1,1,1,1>End\
+}else{\
+ Start<0,0,0,1,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,1,1,1,0,1>End\
+}else{\
+ Start<0,0,0,1,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,0,1,1,0,1,1>End\
+}else{\
+ Start<0,0,0,1,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,1,1,0,0,1>End\
+}else{\
+ Start<0,0,0,1,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,0,1,0,1,1,1>End\
+}else{\
+ Start<0,0,0,1,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,1,0,1,0,1>End\
+}else{\
+ Start<0,0,0,1,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,0,1,0,0,1,1>End\
+}else{\
+ Start<0,0,0,1,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,1,0,0,0,1>End\
+}else{\
+ Start<0,0,0,1,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}else{\
+ if(C4){\
+if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,0,0,1,1,1,1>End\
+}else{\
+ Start<0,0,0,0,1,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,0,1,1,0,1>End\
+}else{\
+ Start<0,0,0,0,1,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,0,0,1,0,1,1>End\
+}else{\
+ Start<0,0,0,0,1,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,0,1,0,0,1>End\
+}else{\
+ Start<0,0,0,0,1,0,0,0>End\
+}\
+}\
+}\
+}else{\
+ if(C5){\
+if(C6){\
+if(C7){\
+Start<0,0,0,0,0,1,1,1>End\
+}else{\
+ Start<0,0,0,0,0,1,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,0,0,1,0,1>End\
+}else{\
+ Start<0,0,0,0,0,1,0,0>End\
+}\
+}\
+}else{\
+ if(C6){\
+if(C7){\
+Start<0,0,0,0,0,0,1,1>End\
+}else{\
+ Start<0,0,0,0,0,0,1,0>End\
+}\
+}else{\
+ if(C7){\
+Start<0,0,0,0,0,0,0,1>End\
+}else{\
+ Start<0,0,0,0,0,0,0,0>End\
+}\
+}\
+}\
+}\
+}\
+}\
+}\
+}
+
